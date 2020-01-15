@@ -19,9 +19,10 @@ const week = {
 console.log('week.ru[0], week.en[2] :', week.ru[0], week.en[2]);
 
 //Пусть теперь в переменной lang хранится язык (она принимает одно из значений или 'ru', или 'en' - либо то, либо то), а в переменной day - номер дня. Выведите словом день недели, соответствующий переменным lang и day. То есть: если, к примеру, lang = 'ru' и day = 3 - то выведем 'среда'.
-let lang = 'en'; let day = 3;
+let lang = 'en';
+let day = 3;
 if (lang == 'ru') {
-    console.log(week.ru[day-1]);
+	console.log(week.ru[day - 1]);
 } else if (lang == 'en') {
-    console.log(week.en[day-1]);
+	console.log(week.en[day - 1]);
 }
