@@ -11,7 +11,11 @@ function renderStatistics(ctx, names, times) {
     ctx.fillStyle = 'white';
     ctx.fillRect(X_CLOUD, Y_CLOUD, WEIDTH_CLOUD, HEIGHT_CLOUD);
     ctx.fillStyle = 'black';
+    ctx.font= '16px PT Mono';
     ctx.textBaseline = 'hanging';
-    ctx.fillText(text, (X_CLOUD + WEIDTH_CLOUD/3 ), Y_CLOUD + 10);
+    ctx.textAlign = 'center';
+    ctx.fillText(text, X_CLOUD+ WEIDTH_CLOUD/2 , Y_CLOUD + 10);
+    ctx.fillText('Список результатов:', X_CLOUD+ WEIDTH_CLOUD/2 , Y_CLOUD + 30);
+
     // ctx.textBaseline = 'handing';
 }
